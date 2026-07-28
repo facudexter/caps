@@ -142,17 +142,29 @@
     .footer-links a:hover { color: var(--white); }
 
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { height: 70vw; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 50px 6% 30px; }
+      .hero-right { height: 100vw; }
       .consult { grid-template-columns: 1fr; gap: 3rem; }
       .garantia { grid-template-columns: 1fr; }
       .gallery-slider { height: 380px; }
     }
     @media (max-width: 600px) {
       .nav-links { display: none; }
+      .hero-left { padding: 36px 5% 24px; }
+      .hero-h1 { font-size: 3.8rem; }
+      .hero-sub { margin-top: .8rem; font-size: .85rem; }
+      .hero-actions { margin-top: 1.4rem; gap: .65rem; }
+      .hero-actions a { padding: .7rem 1.3rem; font-size: .75rem; }
+      .hero-right { height: 88vw; }
+      .drops { padding: 60px 5%; }
+      .drops-header { flex-direction: column; gap: .5rem; }
+      .drops-sub { text-align: left; max-width: 100%; }
+      .gallery-slider { height: 72vw; min-height: 250px; }
       .drops-info { grid-template-columns: 1fr; }
-      footer { flex-direction: column; text-align: center; }
-      .gallery-slider { height: 280px; }
+      .consult { padding: 60px 5%; gap: 2rem; }
+      .garantia-cell { padding: 2rem 1.5rem; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 5%; }
     }
   </style>
 </head>
