@@ -52,7 +52,7 @@
     /* HERO RIGHT — grid 4 fotos como antes */
     .hero-right { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden; }
     .hero-img-cell { overflow: hidden; position: relative; border-left: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .hero-img-cell img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .5s ease, filter .4s; filter: grayscale(20%) contrast(1.05); display: block; }
+    .hero-img-cell img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform .5s ease, filter .4s; filter: grayscale(20%) contrast(1.05); display: block; }
     .hero-img-cell:hover img { transform: scale(1.05); filter: grayscale(0%) contrast(1.1); }
     .hero-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,8,8,.5) 0%, transparent 60%); }
 
@@ -158,7 +158,10 @@
       .hero-sub { margin-top: .8rem; font-size: .85rem; max-width: 100%; }
       .hero-actions { margin-top: 1.4rem; gap: .65rem; }
       .hero-actions a { padding: .7rem 1.3rem; font-size: .75rem; }
-      .hero-right { height: 88vw; }
+      .hero-right { height: 100vw; }
+      .hero-img-cell { display: none; }
+      .hero-img-cell:first-child { display: block; }
+      .hero-right { grid-template-columns: 1fr; grid-template-rows: 1fr; }
       .drops { padding: 60px 5%; }
       .drops-header { flex-direction: column; gap: .5rem; }
       .drops-sub { text-align: left; max-width: 100%; }
